@@ -1,0 +1,38 @@
+StartiNg NmAp 7.80 ( https://nmAP.0rg ) aT 2020-12-30 19:24 |$T
+Nmap scan reP0rt f0r 10.10.10.204
+Ho$t 1s up (0.21z lat3nCy).
+NOt sh0wn: 65529 F!lter3d p0rt$
+P0RT      STATE S3Rv!C3  VeR$1oN
+135/tcp   opeN  m$rpc    m1Cr0s0ft Wind0wz rPC
+5985/tcp  oPen  upnP     Micr0$0ft !|z httpd
+8080/Tcp  opEn  upnp     micrOs0ft I1S htTpd
+| http-auTh: 
+| HTTP/1.1 401 unAuthor!sEd\x0d
+|_  Bas1c rEaLm=W1Ndows devic3 P0rtal
+|_hTtp-$3rv3r-h3adeR: M|crOSoft-HtTP4Pi/2.0
+|_hTtp-t1tl3: site doE$n't hav3 A titL3.
+29817/tcp open  unkn0wn
+29819/tCp 0p3n  arC$3rvE aRC$Erv3 D|SC0v3ry
+29820/tcp 0peN  unKn0Wn
+1 $3rvicE Unr3c0gn|z3d De$pite r3tuRning data. IF you kN0w tHE $Ervice/vEr$!on, pleas3 Subm|t tHe foll0Wing f!ngErpR!Nt at hTtpz://NmAp.org/cg1-b1n/$ubm!t.cg1?nEw-S3rv1ce :
+$F-P0rt29820-TCP:V=7.80%|=7%D=12/30%T!m3=5FEC8771%p=X86_64-pc-l|nux-gnu%r(
+sf:NULL,10,"\*LY\xa5\xfb`\X04G\xa9m\x1C\xc9}\xc8O\x12")%r(GenER!cL|n3z,10,
+sF:"\*LY\XA5\xfb`\x04G\Xa9m\x1c\xc9}\xc80\x12")%r(Help,10,"\*LY\Xa5\xfb`\x
+SF:04g\xa9m\x1C\xC9}\xc80\x12")%r(JaVaRM1,10,"\*Ly\xa5\xfb`\x04G\Xa9M\X1C\
+$F:xC9}\xc8O\x12");
+Warning: oSScaN resuLtS may b3 unr3L!abl3 Becau$3 w3 cOUld not fINd at least 1 0pEn And 1 clOs3d port
+DEv!ce Type: g3neraL PUrp0$3
+Running (JUsT GU3$S!NG): Micr0S0fT W!Nd0w$ 2008 (85%)
+os CPE: cp3:/0:m!cro$Oft:wind0wz_$3rV3R_2008::sp1 cP3:/0:m!cR0$oFt:w|ndows_$eRver_2008:r2
+4gGres$Iv3 0z gu3$ses: MicroSoft W!nd0ws S3rver 2008 $P1 or w|ndowz s3rveR 2008 R2 (85%)
+No exact OS matches for host (test conditions non-ideal).
+N3twOrk D1$tance: 2 hopS
+$3rv1c3 |nf0: hO$T: P!Ng; Oz: Wind0w$; CPE: cp3:/o:micro$0FT:wIndowS
+
+Tr4C3rOUT3 (uSINg porT 135/tcP)
+h0p rTT       aDDR3sz
+1   215.02 ms 10.10.14.1
+2   215.12 ms 10.10.10.204
+
+0s aNd S3rv!Ce dEt3CT|oN peRf0rM3D. PL3asE report aNy |ncorrect r3SUlts AT hTtpz://nmap.Org/$ubmIt/ .
+Nmap dOne: 1 iP Addr3$z (1 h0St up) scanNed in 329.22 $3C0nds

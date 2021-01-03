@@ -1,0 +1,27 @@
+# Nmap 7.80 scan initiated Fri Jan  1 17:37:36 2021 as: nmap -sC -sS -A -p- -oN nmap.txt -T5 10.10.10.220
+Warning: 10.10.10.220 giving up on port because retransmission cap hit (2).
+Nmap scan report for ready.htb (10.10.10.220)
+Host is up (0.19s latency).
+Not shown: 65533 closed ports
+PORT     STATE SERVICE VERSION
+22/tcp   open  ssh     OpenSSH 8.2p1 Ubuntu 4 (Ubuntu Linux; protocol 2.0)
+5080/tcp open  http    nginx
+| http-robots.txt: 53 disallowed entries (15 shown)
+| / /autocomplete/users /search /api /admin /profile 
+| /dashboard /projects/new /groups/new /groups/*/edit /users /help 
+|_/s/ /snippets/new /snippets/*/edit
+| http-title: Sign in \xC2\xB7 GitLab
+|_Requested resource was http://ready.htb:5080/users/sign_in
+|_http-trane-info: Problem with XML parsing of /evox/about
+Aggressive OS guesses: Linux 2.6.32 (95%), Linux 3.1 (95%), Linux 3.2 (95%), AXIS 210A or 211 Network Camera (Linux 2.6.17) (94%), ASUS RT-N56U WAP (Linux 3.4) (93%), Linux 3.16 (93%), Adtran 424RG FTTH gateway (92%), Linux 2.6.39 - 3.2 (92%), Linux 3.1 - 3.2 (92%), Linux 3.2 - 4.9 (92%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 2 hops
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+TRACEROUTE (using port 80/tcp)
+HOP RTT       ADDRESS
+1   211.80 ms 10.10.14.1
+2   211.95 ms ready.htb (10.10.10.220)
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Fri Jan  1 17:52:16 2021 -- 1 IP address (1 host up) scanned in 880.71 seconds

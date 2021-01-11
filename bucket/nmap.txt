@@ -1,0 +1,4 @@
+# Nmap 7.80 scan initiated Sun Jan  3 15:48:54 2021 as: nmap -sC -sS -A -p- -oN nmap.txt -T5 http://bucket.htb
+Unable to split netmask from target expression: "http://bucket.htb"
+WARNING: No targets were specified, so 0 hosts scanned.
+# Nmap done at Sun Jan  3 15:48:54 2021 -- 0 IP addresses (0 hosts up) scanned in 0.44 seconds

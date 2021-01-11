@@ -1,0 +1,37 @@
+{
+    "Table": {
+        "AttributeDefinitions": [
+            {
+                "AttributeName": "username",
+                "AttributeType": "S"
+            },
+            {
+                "AttributeName": "password",
+                "AttributeType": "S"
+            }
+        ],
+        "TableName": "users",
+        "KeySchema": [
+            {
+                "AttributeName": "username",
+                "KeyType": "HASH"
+            },
+            {
+                "AttributeName": "password",
+                "KeyType": "RANGE"
+            }
+        ],
+        "TableStatus": "ACTIVE",
+        "CreationDateTime": 1609750386.026,
+        "ProvisionedThroughput": {
+            "LastIncreaseDateTime": 0.0,
+            "LastDecreaseDateTime": 0.0,
+            "NumberOfDecreasesToday": 0,
+            "ReadCapacityUnits": 5,
+            "WriteCapacityUnits": 5
+        },
+        "TableSizeBytes": 107,
+        "ItemCount": 3,
+        "TableArn": "arn:aws:dynamodb:us-east-1:000000000000:table/users"
+    }
+}

